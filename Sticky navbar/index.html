@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .navbar {
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            z-index: 1000; /* Ensure the navbar is on top */
+        }
+        .content {
+            padding: 15px;
+        }
+        .section {
+            height: 1000px; /* For demonstration */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        Sticky Navbar
+    </div>
+    <div class="content">
+        <div class="section" style="background-color: #f4f4f4;">
+            <h2>Section 1</h2>
+            <p>Scroll down to see the sticky effect.</p>
+        </div>
+        <div class="section" style="background-color: #ddd;">
+            <h2>Section 2</h2>
+            <p>look after scorling the nav bar remain constant</p>
+        </div>
+    </div>
+</body>
+</html>
